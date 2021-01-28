@@ -16,6 +16,9 @@ public/hot
 public_html/storage
 public_html/hot
 
+public/dist
+public/mix-manifest.json
+
 storage/*.key
 .env
 Homestead.yaml
