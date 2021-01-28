@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// SPA fallback.
+Route::any('{all}', function () {
+    return view('layouts.spa');
+})->where('all', '^((?!api).)*?');
